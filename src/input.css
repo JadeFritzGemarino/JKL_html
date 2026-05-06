@@ -302,3 +302,13 @@ input[type="submit"]:hover {
     border: 1px solid #000;
     text-align: center;
 }
+
+@import "tailwindcss";
+
+@theme {
+    --background-image-jkl-hero: url('../jkl_assets/jkl_bg.png');
+    --color-jkl-dark: #111111;
+    --color-jkl-green: #04AA6D;
+    --color-jkl-gray: #818181;
+    --color-jkl-bg: #f4f7f6;
+}
