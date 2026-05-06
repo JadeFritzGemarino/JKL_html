@@ -9,7 +9,6 @@ ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: #333;
     width: 100%;
     display: flex;
@@ -142,7 +141,48 @@ input[type="submit"]:hover {
     }
 }
 
-/* 1. The Container */
+.dropdown_index {
+    position: relative;
+    display: inline-block;
+
+}
+
+.dropdown_content_index {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #777;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9999 !important;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown_content_index a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    background-color: #333;
+
+}
+
+.dropdown_index:hover .dropdown_content_index {
+    display: block !important;
+}
+
+.dropbtn_index {
+    background-color: transparent;
+    color: white;
+    padding: 14px 16px;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+}
+
 .dropdown_student {
     position: relative;
     display: block;
@@ -162,7 +202,6 @@ input[type="submit"]:hover {
     font-family: inherit;
 }
 
-
 .dropdown-content {
     display: none;
     position: absolute;
@@ -174,7 +213,6 @@ input[type="submit"]:hover {
     z-index: 999;
     border-left: 1px solid #333;
 }
-
 
 .dropdown-content a {
     color: #818181 !important;
@@ -188,11 +226,10 @@ input[type="submit"]:hover {
 
 .dropdown_student:hover .dropbtn_student {
     color: #f1f1f1;
-    background-color: #222;
 }
 
 .dropdown-content a:hover {
-    background-color: #333;
+
     color: #ffffff !important;
 }
 
@@ -203,14 +240,14 @@ input[type="submit"]:hover {
 .sidebar_logo_container {
     padding: 20px;
     text-align: center;
-    background-color: transparent; 
-    border-bottom: 1px solid #333; 
+    background-color: transparent;
+    border-bottom: 1px solid #333;
 }
 
 .school_logo {
-    width: 80px; 
+    width: 80px;
     height: auto;
-    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2)); 
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
 }
 
 
